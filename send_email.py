@@ -3,7 +3,7 @@ import telebot
 from telebot import types
 
 # Подключение к базе данных PostgreSQL
-conn = psycopg2.connect(database="dosug_center", user="postgres", password="EmmojoyProoo123", host="127.0.0.1", port="5433")
+conn = psycopg2.connect(database="dosug_center", user="postgres", password="*********", host="127.0.0.1", port="5433")
 cursor = conn.cursor()
 
 # Создание таблицы расписания курсов
@@ -28,7 +28,7 @@ cursor.execute('''CREATE TABLE IF NOT EXISTS events
                 time TEXT)''')
 
 # Инициализация телеграм бота
-bot = telebot.TeleBot('5829965149:AAFLcZdDijL3N43mZ0UrkmGUXdBicdv51Tw')
+bot = telebot.TeleBot('*****************************')
 
 # Обработчик команды start
 @bot.message_handler(commands=['start'])
